@@ -1,2 +1,2 @@
 # JLStoryboard
-Management storyboard
+Help you to manage the Storyboard!
