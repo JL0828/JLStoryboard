@@ -116,7 +116,6 @@
 /********************************************************************/
 - (UIViewController *)instantiateViewControllerWithIdentifier:(NSString *)Identifier
 {
-    NSLog(@"%@", Identifier);
     UIViewController * _jlViewController;
 
     for (UIStoryboard *storyboard in __array)
