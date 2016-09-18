@@ -130,12 +130,12 @@
     }
 
 #ifdef DEBUG
-    if (!_jlViewController)
-    {
-        UIAlertView  *alertView = [[UIAlertView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT/2)];
-        [alertView setTitle:[NSString stringWithFormat:@"All Storyboard Havn't Found Identifier:%@",Identifier]];
-        [alertView show];
-    }
+if (!_jlViewController)
+{
+    UIAlertView  *alertView = [[UIAlertView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height/2)];
+    [alertView setTitle:[NSString stringWithFormat:@"All Storyboard Havn't Found Identifier:%@",Identifier]];
+    [alertView show];
+}
 #endif
     return _jlViewController;
 }
